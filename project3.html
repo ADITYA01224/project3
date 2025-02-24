@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Smartwatch Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .product {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            width: 80%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .product-image img {
+            width: 350px;
+            border-radius: 10px;
+        }
+        .product-details {
+            margin-left: 20px;
+        }
+        .price {
+            color: #4b6cb7;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .add-to-cart {
+            background: #4b6cb7;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .add-to-cart:hover {
+            background: #182848;
+        }
+        .additional-info {
+            width: 80%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .reviews, .related-products {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 45%;
+        }
+        .related-products ul {
+            list-style: none;
+            padding: 0;
+        }
+        .related-products li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .related-products img {
+            width: 80px;
+            margin-right: 10px;
+        }
+        footer {
+            background: #182848;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product">
+            <div class="product-image">
+                <img src="watch.jpg" alt="Luxury Smartwatch">
+            </div>
+            <div class="product-details">
+                <h1>Luxury Smartwatch</h1>
+                <p class="price">$299.99</p>
+                <p class="description">Experience the perfect blend of luxury and technology with our premium smartwatch.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="additional-info">
+            <div class="reviews">
+                <h2>Customer Reviews</h2>
+                <p>★★★★★ - Exceptional quality and stunning design!</p>
+            </div>
+            <div class="related-products">
+                <h2>Related Products</h2>
+                <ul>
+                    <li><img src="pen.jpg" alt="Premium Fountain Pen"> <a href="#">Premium Fountain Pen</a></li>
+                    <li><img src="book.jpg" alt="Leather Notebook"> <a href="#">Leather Notebook</a></li>
+                    <li><img src="vintage_watch.jpg" alt="Vintage Timepiece"> <a href="#">Vintage Timepiece</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Elevate Your Style - Where Innovation Meets Elegance</p>
+    </footer>
+</body>
+</html>
